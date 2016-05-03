@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="menu-one">
+	<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #003300;
+	width: 30cm;
+	margin: auto;
+}
+
+li {
+	border-right: 1px solid #bbb;
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: large;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #29a329;
+}
+</style>
+	<body>
+		<ul>
+			<li><a href="/">خانه</a></li>
+			<li><a href="/resu">جدول جواب</a></li>
+			<li><a href="#contact">ارتباطات</a></li>
+			<li style="float: left;"><a class="active" href="#about">درباره</a></li>
+		</ul>
+	</body>
+</div>
+</html>
