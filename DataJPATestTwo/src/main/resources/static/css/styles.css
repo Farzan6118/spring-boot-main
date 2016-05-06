@@ -1,0 +1,36 @@
+html {
+	background-color: #f0f0f0;
+}
+
+body {
+	font-family: 'DejaVu Sans', Arial, Helvetica;
+	font-size: 12px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	margin: 0px auto;
+	padding: 20px 20px;
+	width: 850px;
+}
+
+table, tr, td, th {
+	margin: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-family: cursive;
+	direction: rtl;
+	padding: 10px;
+}
+
+thead {
+	background-color: teal;
+	color: white;
+}
+
+table.dd {
+	margin: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-family: cursive;
+	direction: rtl;
+	padding: 10px;
+}
