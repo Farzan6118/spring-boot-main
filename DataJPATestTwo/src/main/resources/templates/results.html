@@ -4,7 +4,9 @@
 	xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
+<link rel="stylesheet" href="styles.css"/>
+
 </head>
 <body>
 	<div th:include="menu :: menu-one"></div>
@@ -18,7 +20,7 @@
 				<th>national code</th>
 			</tr>
 		</thead>
-		<tbody style="border: 1px solid black; border-collapse: collapse;">
+		<tbody>
 			<tr th:each="res : ${result}">
 				<td th:text="${res.id}"></td>
 				<td th:text="${res.firstName}"></td>
