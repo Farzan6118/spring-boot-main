@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="menu-one">
-	<style>
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #003300;
-	width: 30cm;
-	margin: auto;
-}
 
-li {
-	border-right: 1px solid #bbb;
-	float: right;
-}
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
 
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	font-size: large;
-	padding: 14px 16px;
-	text-decoration: none;
-}
 
-li a:hover {
-	background-color: #29a329;
-}
-</style>
-	<body>
-		<ul>
-			<li><a href="/">خانه</a></li>
-			<li><a href="/resu">جدول جواب</a></li>
-			<li><a href="#contact">ارتباطات</a></li>
-			<li style="float: left;"><a class="active" href="#about">درباره</a></li>
-		</ul>
-	</body>
-</div>
+<body>
+	<div th:fragment="menu-one">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="fo"><a href="/">خانه</a></li>
+					<li><a href="/resu">جدول جواب</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+							Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+							Login</a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+	</div>
+	<script>
+		$(function() {
+
+		
+		});
+	</script>
+
+</body>
 </html>
