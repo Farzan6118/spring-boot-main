@@ -2,16 +2,19 @@ package com.data.jpa.controller;
 
 import com.data.jpa.model.User;
 import com.data.jpa.repository.UserRepository;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 @Controller
 @RequestMapping("user")
+@EnableDiscoveryClient
 public class WebController {
 
     final UserRepository userRepository;
@@ -46,4 +49,9 @@ public class WebController {
         return "redirect:/user";
     }
 
+    @GetMapping("/health-check")
+    public @ResponseBody ResponseEntity<String> customHealthChecker() {
+        String message = "health-check called at " + new Date(System.currentTimeMillis());
+        return new ResponseEntity<>(message, HttpStatus.OK);
+    }
 }
