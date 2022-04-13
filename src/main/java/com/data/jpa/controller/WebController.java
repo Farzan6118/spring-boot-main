@@ -50,7 +50,8 @@ public class WebController {
     }
 
     @GetMapping("/health-check")
-    public @ResponseBody ResponseEntity<String> customHealthChecker() {
+    public @ResponseBody
+    ResponseEntity<String> customHealthChecker() {
         String message = "health-check called at " + new Date(System.currentTimeMillis());
         return new ResponseEntity<>(message, HttpStatus.OK);
     }

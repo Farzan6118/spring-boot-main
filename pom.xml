@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>Spring-DataJPA</name>
-    <description>Demo project for Spring Boot Data JPA and Consul Service Discovery </description>
+    <description>Demo project for Spring Boot Data JPA and Consul Service Discovery</description>
 
     <developers>
         <developer>
@@ -32,15 +32,15 @@
 
     <dependencies>
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-consul</artifactId>-->
-<!--            <version>${springframework.cloud.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-consul</artifactId>-->
+        <!--            <version>${springframework.cloud.version}</version>-->
+        <!--        </dependency>-->
 
         <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-consul-all</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-all</artifactId>
             <version>${springframework.cloud.version}</version>
         </dependency>
 
